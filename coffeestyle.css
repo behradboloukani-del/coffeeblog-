@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  position: relative;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+aside {
+  padding: 10px;
+  width: 500px;
+}
+article {
+  margin-bottom: 60px;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  /* float: left; */
+}
+/* nav {
+  float: right;
+} */
+.related-posts {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+.post-img {
+  width: 60%;
+  height: auto;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+/* article header p {
+  font-style: italic;
+} */
+.related-author {
+  font-style: italic;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h5 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+li {
+  font-size: 20px;
+}
+/* footer p {
+  font-size: 16px;
+} */
+
+.Copyright {
+  font-size: 16px;
+  font-weight: bold;
+}
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+a:link {
+  text-decoration: none;
+  color: #1098ad;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+a:link:last-child {
+  margin-right: 0px;
+}
+a:visited {
+  color: #1098ad;
+}
+a:active {
+  background-color: cyan;
+  color: #f7f7f7;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline dotted orange;
+}
+button {
+  position: absolute;
+  font-size: 22px;
+  padding: 20px;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h3 + p::first-line {
+  color: red;
+}
+h2::after {
+  content: "NEW";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: -25px;
+  right: -35px;
+}
+/*.author-img {
+  float: left;
+}
+.related-author {
+  float: left;
+  margin: 10px 0 20px 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+article {
+  width: 870px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+  box-sizing: border-box;
+}
+aside li {
+  list-style: none;
+}
+footer {
+  clear: both;
+}
+*/
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-column: 1/-1;
+}
+footer {
+  grid-column: 1/-1;
+}
+.author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.related-author {
+  margin-bottom: 0;
+}
+/* .row {
+  display: flex;
+  gap: 60px;
+  align-items: start;
+} */
+
+aside {
+  align-self: start;
+}
+article {
+  flex: 1;
+}
+aside li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.related-posts ul {
+  margin-left: 5px;
+}

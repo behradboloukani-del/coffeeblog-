@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.villa-card {
+  position: relative;
+
+  margin: 50px auto;
+  width: 360px;
+  height: 610px;
+
+  border-radius: 38px;
+  background: #071a40;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.villa-card::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.05) 55%,
+    rgba(0, 8, 20, 0.7) 75%,
+    rgba(0, 15, 30, 0.97) 100%
+  );
+  top: 0; /*inset:0*/
+}
+
+.price {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px 19px;
+  display: flex;
+  gap: 10px;
+  background: #cfcfcf;
+  border-radius: 30px;
+  color: #444;
+  align-items: center;
+}
+
+.price strong {
+  font-size: 22px;
+}
+
+.price span {
+  font-size: 14px;
+  color: #333;
+}
+
+.favorite {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+
+  z-index: 5;
+
+  background: #cfcfcf;
+  border-radius: 50%;
+  border: none;
+  color: #444;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.favorite i {
+  font-size: 23px;
+  color: #17202b;
+}
+
+.favorite:hover {
+  transform: scale(1.08);
+}
+
+.favorite:hover i {
+  color: #e74c3c;
+}
+
+.card-content {
+  position: absolute;
+
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  color: #fff;
+
+  z-index: 2;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.title-row h2 {
+  font-size: 19px;
+  white-space: nowrap;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.rating i {
+  color: #f1c40f;
+  font-size: 15px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+  color: #e8e8e8;
+  font-size: 16px;
+}
+
+.location i {
+  font-size: 23px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #ededed;
+  font-size: 15px;
+}
+
+.detail sup {
+  font-size: 8px;
+}
+
+.detail i {
+  font-size: 19px;
+}
+
+.reserve {
+  width: 100%;
+  height: 72px;
+
+  border: none;
+  border-radius: 40px;
+  background: #ffffff;
+  color: #222;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reserve:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reserve:active {
+  transform: translateY(0);
+}
